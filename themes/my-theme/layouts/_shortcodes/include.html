@@ -4,6 +4,14 @@
 
 {{- $page := .Site.GetPage $path }}
 
-Here is the result of `.Site.GetPage {{ $path }}`:
+Here is the result of `.Site.GetPage {{ $path }}` in the shortcode:
 
 {{ debug.Dump $page }}
+
+---
+
+Here is the same call but from a partial:
+
+{{ partial "include" (dict "path" $path) }}
+
+---
