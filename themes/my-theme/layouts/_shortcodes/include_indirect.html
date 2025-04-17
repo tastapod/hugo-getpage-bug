@@ -1,0 +1,7 @@
+{{- $path := .Get 0 }}
+
+### In the indirect shortcode with `.Get 0 = {{ $path }}`
+
+Including partial:
+
+{{ partial "include" (dict "path" $path) }}

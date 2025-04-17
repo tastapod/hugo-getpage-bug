@@ -1,0 +1,5 @@
+### In the partial with .path = `{{.path}}`
+
+{{- $page := .Site.GetPage .path }}
+
+`.Site.GetPage {{ .path }}` = {{ debug.Dump $page }}

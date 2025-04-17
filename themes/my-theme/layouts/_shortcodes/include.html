@@ -1,0 +1,9 @@
+{{- $path := .Get 0 }}
+
+### In the shortcode with `.Get 0 = {{ $path }}`
+
+{{- $page := .Site.GetPage $path }}
+
+Here is the result of `.Site.GetPage {{ $path }}`:
+
+{{ debug.Dump $page }}
